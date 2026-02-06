@@ -1,0 +1,3 @@
+./files_to_watch\adatok.docx|58aae423b2ef6258ed772f521fb542cee7bd936785d913086f6a1b79d2ef0f09
+./files_to_watch\kep.png|0c8d3a33b4596d1fa2990f8c82f184ecfa1fc279e1b192083c1eaa478253b3ef
+./files_to_watch\teszt.txt|9f37161460f62c132e3c730b7c898bbfd1b287bc13ee3f5291cb60856742d0a1
