@@ -54,4 +54,4 @@ A gyűjtemény 9 haladó Python eszközt tartalmaz, amelyek demonstrálják, hog
 
 ## ⚠️ Jogi Nyilatkozat (Disclaimer)
 
-A repozitóriumban található kódok kizárólag **oktatási és etikus kiberbiztonsági kutatási** célokat szolgálnak. A szoftverek bármilyen engedély nélküli, rosszindulatú használata illegális és súlyos jogi következményeket vonhat maga után. A készítő nem vállal felelősséget a kódok nem rendeltetésszerű használatáért. [cite: 2026-02-04]
+A repozitóriumban található kódok kizárólag **oktatási és etikus kiberbiztonsági kutatási** célokat szolgálnak. A szoftverek bármilyen engedély nélküli, rosszindulatú használata illegális és súlyos jogi következményeket vonhat maga után. A készítő nem vállal felelősséget a kódok nem rendeltetésszerű használatáért.
