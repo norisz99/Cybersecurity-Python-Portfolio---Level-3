@@ -1,5 +1,4 @@
 
-
 # ⚠️ LEGAL DISCLAIMER
 
 **HU:** Ez az eszköz kizárólag **saját rendszerek tesztelésére** vagy a tulajdonos írásos engedélyével rendelkező hálózatokon használható. A szoftver oktatási céllal készült. A szerző (Paczok Norisz) elhárít minden felelősséget a jogellenes használatért vagy károkért.
@@ -31,4 +30,5 @@ Ez a projekt egy klasszikus "Reverse Shell" implementációt tartalmaz. A hagyom
 ## 🚀 Használat
 1. **Server (Támadó):** ```bash
    python server.py
+
 
