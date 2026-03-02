@@ -1,4 +1,4 @@
-#### `23_Reverse_Shell/README.md`
+
 
 # ⚠️ LEGAL DISCLAIMER
 
@@ -31,3 +31,4 @@ Ez a projekt egy klasszikus "Reverse Shell" implementációt tartalmaz. A hagyom
 ## 🚀 Használat
 1. **Server (Támadó):** ```bash
    python server.py
+
