@@ -1,18 +1,39 @@
-# 🔐 Ransomware Simulator (Educational)
+# ⚠️ LEGAL DISCLAIMER
 
-## 📌 Áttekintés
-Ez a projekt a zsarolóvírusok (Ransomware) működési mechanizmusát demonstrálja ellenőrzött környezetben. A szoftver két komponensből áll: egy titkosító ágensből ("Malware"), amely AES-128 titkosítással zárolja a fájlokat, és egy visszafejtő eszközből ("Decryptor"), amely a megfelelő kulcs birtokában helyreállítja azokat.
+**HU:** Ez az eszköz kizárólag **saját rendszerek tesztelésére** vagy a tulajdonos írásos engedélyével rendelkező hálózatokon használható. A szoftver oktatási céllal készült. A szerző (Paczok Norisz) elhárít minden felelősséget a jogellenes használatért vagy károkért.
+
+**EN:** This tool is for **educational purposes and authorized testing only**. The creator (Paczok Norisz) assumes no liability for misuse or any damage caused by this program.
+
+---
+
+# 💀 Ransomware Simulator (Educational)
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square)
+![Library](https://img.shields.io/badge/Cryptography-Fernet-red?style=flat-square)
+![Category](https://img.shields.io/badge/Category-Malware_Analysis-orange?style=flat-square)
+
+## 📌 Áttekintés (Overview)
+Ez a projekt a zsarolóvírusok (Ransomware) működési mechanizmusát és a kriptográfiai elveket demonstrálja egy biztonságos, ellenőrzött környezetben. A szoftver szimulálja, hogyan veszi át az irányítást egy támadó az áldozat fájljai felett, és hogyan állíthatóak azok helyre a váltságdíj (itt: a kulcs) birtokában.
+
+A rendszer két fő komponensből áll:
+1.  **Malware (The Encryptor):** AES-alapú titkosítással olvashatatlanná teszi a célfájlokat.
+2.  **Decryptor (The Savior):** A generált szimmetrikus kulcs segítségével visszaállítja az eredeti állapotot.
 
 ## 🛠️ Funkciók
-* **AES-128 Encryption:** Szimmetrikus titkosítás a `cryptography` könyvtár segítségével.
-* **Targeted Attack:** Kizárólag a kijelölt `test_files` mappában dolgozik a biztonság érdekében.
-* **Key Management:** Automatikus kulcsgenerálás és mentés helyi fájlba.
-* **Decryption Logic:** A titkosított adatok visszaállítása bináris szinten.
+* **🔒 Fernet Encryption:** Szimmetrikus (AES-128 CBC módban működő) titkosítás a `cryptography` könyvtár segítségével.
+* **🎯 "Sandbox" Működés:** A biztonság érdekében a program kizárólag a `test_files/` mappában lévő fájlokat támadja meg, a rendszer többi részét érintetlenül hagyja.
+* **🔑 Key Management:** Automatikus titkosító kulcs generálás és mentés (`thekey.key`).
+* **📄 File Discovery:** Rekurzív fájlkeresés a célkönyvtárban (szimulálva a valós kártevők terjedését).
 
 ## ⚙️ Technikai Részletek
 * **Nyelv:** Python 3.x
-* **Könyvtár:** `cryptography.fernet`
-* **Módszer:** Symmetric Key Encryption (Fernet).
+* **Algoritmus:** Fernet (Symmetric Encryption)
+* **Függőség:** `cryptography`
+* **Támadott kiterjesztések:** Minden fájl a célmappában.
 
-## ⚠️ Jogi Nyilatkozat (Disclaimer)
-Ez az eszköz kizárólag **oktatási célra** készült, a kriptográfia és a malware-elemzés megértéséhez. A kód módosítása rosszindulatú célokra, vagy mások adatainak engedély nélküli titkosítása súlyos bűncselekmény.
+## 🚀 Telepítés és Használat
+
+**1. Előkészületek**
+Telepítsd a szükséges kriptográfiai könyvtárat:
+```bash
+pip install cryptography
