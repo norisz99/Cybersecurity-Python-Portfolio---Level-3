@@ -1,19 +1,21 @@
-# 🎨 Project 25: Steganography Tool (LSB Hiding)
+# 🎨 Steganography Tool (LSB Hiding)
 
-**Focus:** Data Hiding, Binary Manipulation, Pixel-level Editing
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square)
+![Library](https://img.shields.io/badge/Lib-Pillow-green?style=flat-square)
+![Category](https://img.shields.io/badge/Category-Cryptography-blue?style=flat-square)
 
----
-
-## 📌 Overview
+## 📌 Áttekintés (Overview)
 Ez a projekt a **Szteganográfia** működését mutatja be. A program a **Least Significant Bit (LSB)** eljárással rejt el szöveges üzeneteket PNG képekben, így a módosítás szabad szemmel láthatatlan marad.
 
----
-
 ## 📊 Vizuális vs. Bináris Eredmény
-1. **Láthatatlanság:** Az `original.png` és a `hidden.png` vizuálisan azonos.
-2. **Adatkinyerés:** A program képes a pixelek legkisebb helyiértékű bitjeiből hiba nélkül visszaállítani az elrejtett szöveget.
+1. **👁️ Láthatatlanság:** Az `original.png` és a `hidden.png` vizuálisan teljesen azonos.
+2. **🔓 Adatkinyerés:** A program képes a pixelek legkisebb helyiértékű bitjeiből hiba nélkül visszaállítani az elrejtett szöveget.
 
----
+## ⚙️ Technikai Részletek
+* **Nyelv:** Python 3.x
+* **Könyvtár:** `PIL` (Pillow)
+* **Módszer:** LSB (Least Significant Bit) manipuláció.
 
-## ⚠️ Jogi Nyilatkozat (Disclaimer)
-A repozitóriumban található kódok kizárólag oktatási és etikus kiberbiztonsági kutatási célokat szolgálnak. A szoftverek bármilyen engedély nélküli, rosszindulatú használata illegális és súlyos jogi következményeket vonhat maga után. [cite: 2026-02-04]
+## 🚀 Használat
+```bash
+python stego.py
